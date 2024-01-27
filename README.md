@@ -25,7 +25,7 @@ Machine Learning Model: Implement a machine learning model using popular librari
 
 How to Use
 Clone the repository to your local machine:
-git clone https://github.com/your-username/python-programs.git
+git clone https://github.com/AdithyaKankipati/Python.git
 
 Navigate to the specific directory based on the difficulty level you're interested in. Each directory contains the Python files for the corresponding programs.
 cd python-programs/beginner-level
