@@ -13,5 +13,6 @@ if user_input > 1:
             break
         else:
             print('The number is a prime')
+            break
 else:
     print('Please enter a positive number')

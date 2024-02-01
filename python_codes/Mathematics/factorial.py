@@ -18,5 +18,4 @@ def factorial(n):
         return fact
  
 num = int(input('Enter any number: '))
-print("Factorial of",num,"is",
-factorial(num))
+print("Factorial of",num,"is",factorial(num))
