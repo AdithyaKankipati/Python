@@ -1,36 +1,19 @@
-# Python program for implementation of Bubble Sort
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb  1 22:32:09 2024
 
-def bubbleSort(arr):
-	n = len(arr)
-	# optimize code, so if the array is already sorted, it doesn't need
-	# to go through the entire process
-	swapped = False
-	# Traverse through all array elements
-	for i in range(n-1):
-		# range(n) also work but outer loop will
-		# repeat one time more than needed.
-		# Last i elements are already in place
-		for j in range(0, n-i-1):
+@author: admin
+"""
 
-			# traverse the array from 0 to n-i-1
-			# Swap if the element found is greater
-			# than the next element
-			if arr[j] > arr[j + 1]:
-				swapped = True
-				arr[j], arr[j + 1] = arr[j + 1], arr[j]
-		
-		if not swapped:
-			# if we haven't needed to make a single swap, we 
-			# can just exit the main loop.
-			return
+user_list = []
+list_len = int(input(('Enter the size of the list: ')))
 
-
-# Driver code to test above
-arr = [64, 34, 25, 12, 22, 11, 90]
-
-print(f'The array is {arr}')
-bubbleSort(arr)
-
-print("Sorted array is:")
-for i in range(len(arr)):
-	print("% d" % arr[i], end=" ")
+for i in range(list_len):
+    user_input = int(input('Enter the numbers to add in the list: '))
+    user_list.append(user_input)
+print(user_list)
+for j in range(list_len):
+    for k in range(0,list_len-j-1):
+        if user_list[k] > user_list[k+1]:
+            user_list[k], user_list[k+1] = user_list[k+1], user_list[k]
+print(user_list)
